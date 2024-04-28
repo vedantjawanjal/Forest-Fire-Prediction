@@ -1,0 +1,34 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+body {
+  background-image: url('/static/fire.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#Sub-title{
+  color: azure;
+}
+
+#Result{
+  color: azure;
+}
+input[type="text"] {
+  color: white;
+}
+.logo-img {
+  height: 60px; /* Set the height of the logo */
+  width: auto; /* Automatically adjust the width to maintain aspect ratio */
+  margin-top: 10px; /* Adjust vertical positioning as needed */
+}
