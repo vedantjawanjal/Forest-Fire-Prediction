@@ -68,7 +68,9 @@
       </div>
 
       <br>
-      <div id='Result'> {{pred}}</div>
+      <!-- <div id='Result'> {{pred}}</div> -->
+      <input type="hidden" id="prediction_result" value="{{pred}}">
+
        <br>
 
     </div>
@@ -117,11 +119,22 @@
 
 
   <!--  Scripts-->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Retrieve the prediction result from the hidden input field
+      var predictionResult = document.getElementById('prediction_result').value;
+      
+      // Check if prediction result is not empty
+      if (predictionResult.trim() !== '') {
+        // Display the prediction result in an alert or popup
+        alert(predictionResult);
+        // Alternatively, you can use a modal or any other popup method here
+      }
+    });
+  </script>
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src=".js/materialize.js"></script>
-  <script src="js/init.js"></script>
+  <script src="./static/js/materialize.js"></script>
+  <script src="./static/js/init.js"></script>
 
   </body>
 </html>
-
-
